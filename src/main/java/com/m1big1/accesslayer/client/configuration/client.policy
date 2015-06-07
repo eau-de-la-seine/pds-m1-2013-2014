@@ -1,0 +1,18 @@
+/* AUTOMATICALLY GENERATED ON Fri May 09 17:43:29 CEST 2014*/
+/* DO NOT EDIT */
+
+grant {
+  permission java.util.logging.LoggingPermission "control";
+  permission java.util.PropertyPermission "java.rmi.server.codebase", "read, write";
+  permission java.util.PropertyPermission "org.apache.activemq.UseDedicatedTaskRunner", "read";
+  permission java.lang.RuntimePermission "accessDeclaredMembers";
+  permission java.net.SocketPermission "localhost:8080",		"connect, resolve";
+  permission java.net.SocketPermission "127.0.0.1:1099",		"connect, resolve";
+  permission java.net.SocketPermission "127.0.0.1:1024-",		"connect, resolve";
+  permission java.net.SocketPermission "172.20.10.2:1024-",		"connect, resolve";
+  permission java.net.SocketPermission "10.10.30.138:1024-",	"connect, resolve";
+  permission java.net.SocketPermission "192.168.1.74:1024-",	"connect, resolve";
+  permission java.net.SocketPermission "192.168.1.98:1024-",	"connect, resolve";
+  permission java.net.SocketPermission "192.168.1.60:1024-",	"connect, resolve";
+  permission java.net.SocketPermission "169.254.211.31:1024-",	"connect, resolve";
+};

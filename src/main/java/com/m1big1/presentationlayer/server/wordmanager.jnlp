@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://localhost/PDS/" href="wordmanager.jnlp">
+	<information>
+		<title>WordManager</title>
+		<vendor>NGUYEN Huu Khuong  - EKINCI Gokan - SAMAMA Oriel</vendor>
+		<description> Utilisation de l'API</description>
+		<icon href="res/icon64x64.png" width="64" height="64"/>
+		<icon kind="shortcut" href="http://localhost/PDS/word_icon.png" width="32" height="32"/>
+		<icon kind="shortcut" href="http://localhost/PDS/word_icon.png" width="64" height="64"/>
+	</information>
+	<resources>
+		<js2e version = "1.6+"/>
+		<jar href="http://localhost/PDS/wordmanager.jar"/>
+		<jar href="http://localhost/PDS/m1big1-common.jar"/>
+		<jar href="http://localhost/PDS/log4j-1.2.17.jar"/>
+		<jar href="http://localhost/PDS/activemq-all-5.8.0.jar"/>
+	</resources>
+	<application-desc main-class="com.m1big1.presentationlayer.swing.Launcher" />
+
+</jnlp>

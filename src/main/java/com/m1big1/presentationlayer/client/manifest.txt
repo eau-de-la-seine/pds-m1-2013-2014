@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: . m1big1-common.jar log4j-1.2.17.jar activemq-all-5.8.0.jar
+Main-Class: com.m1big1.presentationlayer.swing.Launcher
