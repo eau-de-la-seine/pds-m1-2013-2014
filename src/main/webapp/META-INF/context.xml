@@ -1,0 +1,71 @@
+<Context>
+
+    <!-- See http://activemq.apache.org/tomcat for the Active MQ configuration -->
+    
+    <!-- Can be : brokerURL="tcp://macbookpro-bd6c:61616" -->
+    <!-- Can be : brokerURL="tcp://fressl23916:61616" -->
+    
+    <Resource 
+        name="jms/connectionFactory" 
+        auth="Container" 
+        type="org.apache.activemq.ActiveMQConnectionFactory" 
+        description="JMS Connection Factory"
+        factory="org.apache.activemq.jndi.JNDIReferenceFactory" 
+        brokerURL="tcp://fressl23916:61616" 
+        brokerName="LocalActiveMQBroker" />
+
+    <Resource
+        name="jms/p2b_jms_queue" 
+        auth="Container" 
+        type="org.apache.activemq.command.ActiveMQQueue" 
+        description="Presentation Layer To Business Layer Queue"
+        factory="org.apache.activemq.jndi.JNDIReferenceFactory" 
+        physicalName="p2b_jms_queue" />
+
+    <Resource
+        name="jms/b2a_jms_queue" 
+        auth="Container" 
+        type="org.apache.activemq.command.ActiveMQQueue" 
+        description="Access Layer To Business Layer Queue"
+        factory="org.apache.activemq.jndi.JNDIReferenceFactory" 
+        physicalName="b2a_jms_queue" />
+                
+    <Resource
+        name="jms/a2b_jms_queue" 
+        auth="Container" 
+        type="org.apache.activemq.command.ActiveMQQueue" 
+        description="Access Layer To Business Layer Queue"
+        factory="org.apache.activemq.jndi.JNDIReferenceFactory" 
+        physicalName="a2b_jms_queue" />
+        
+    <Environment 
+        name="log_file_location" 
+        value="C:/pds/server/logs/log"
+        type="java.lang.String" override="false"/>
+        
+    <Environment 
+        name="word_file_location" 
+        value="C:/pds/server/words/"
+        type="java.lang.String" override="false"/>
+        
+    <Environment 
+        name="dto_package_presentation" 
+        value="com.m1big1.businesslayer.dto.presentation"
+        type="java.lang.String" override="false"/>
+        
+    <Environment 
+        name="dto_package_access" 
+        value="com.m1big1.businesslayer.dto.access"
+        type="java.lang.String" override="false"/>
+        
+    <Environment 
+        name="action_package_presentation" 
+        value="com.m1big1.businesslayer.action.presentation"
+        type="java.lang.String" override="false"/>
+
+    <Environment 
+        name="action_package_access" 
+        value="com.m1big1.businesslayer.action.access"
+        type="java.lang.String" override="false"/>
+        
+</Context>
